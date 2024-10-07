@@ -8,11 +8,8 @@ This project is a Django web application developed for the **Iran National Steel
 
 - [Features](#features)
 - [How It Works](#how-it-works)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Videos](#Videos)
+
 
 ## Features
 
@@ -28,11 +25,6 @@ This project is a Django web application developed for the **Iran National Steel
 
 For a more detailed explanation of the methodology, please refer to our [published paper](link_to_paper).
 
-## Installation
+## Videos
 
-To set up the project locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/pipe-length-estimation.git
-   cd pipe-length-estimation
+Here are demonstration videos of the Helmet Detection Application
