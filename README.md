@@ -38,4 +38,10 @@ https://github.com/user-attachments/assets/f14603d3-c476-4689-99b2-396e1b83d16b
 ### Segmented Image
 ![segmented_image](https://github.com/user-attachments/assets/511267b5-2f9a-477a-b1b0-f7f4a8de0740)
 
+## Research Paper
 
+This project is based on the methodology described in our research paper: **[Controlling seamless steel pipe thickness in 
+production process using computer vision and deeplearning techniques]**. The paper outlines the process of using a custom-trained segmentation model for accurate pipe length estimation on the production line.
+
+
+[Controlling Steel Pipe Thickness.pdf](https://github.com/user-attachments/files/17278943/Controlling.Steel.Pipe.Thickness.pdf)
