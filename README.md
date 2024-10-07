@@ -27,4 +27,4 @@ For a more detailed explanation of the methodology, please refer to our [publish
 
 ## Videos
 
-Here are demonstration videos of the Helmet Detection Application
+Here are demonstration videos of the Helmet Detection Application.
