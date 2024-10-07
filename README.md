@@ -23,7 +23,7 @@ This project is a Django web application developed for the **Iran National Steel
 2. **Segmentation**: The captured image is processed using a pre-trained segmentation model, specifically trained on a custom dataset of pipe images.
 3. **Length Estimation**: By identifying the first and last points of the segmented pipe and comparing these points with defined labels, the application accurately estimates the pipe's length.
 
-For a more detailed explanation of the methodology, please refer to our [published paper](link_to_paper).
+
 
 ## Videos
 
