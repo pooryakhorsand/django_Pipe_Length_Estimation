@@ -1,0 +1,39 @@
+# Ignore environment files
+.env
+
+# Ignore unnecessary files from migrations
+*/migrations/__pycache__/
+*/migrations/*.pyc
+
+# Ignore database files
+*.sqlite3
+
+# Ignore local configuration files
+*.local
+
+# Ignore media files (user-uploaded content)
+media/
+
+# Ignore static files collected during deployment
+/staticfiles/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore log files
+*.log
+
+# Ignore IDE settings
+.idea/
+.vscode/
+
+# Ignore coverage reports
+.coverage
+htmlcov/
