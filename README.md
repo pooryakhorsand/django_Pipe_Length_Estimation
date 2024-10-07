@@ -9,8 +9,8 @@ This project is a Django web application developed for the **Iran National Steel
 - [Features](#features)
 - [How It Works](#how-it-works)
 - [Videos](#Videos)
-
-
+- [Research Paper](#Research-Paper)
+Research Paper
 ## Features
 
 - **Automated Image Capture**: Captures screenshots of pipes at the production line.
@@ -45,3 +45,4 @@ production process using computer vision and deeplearning techniques**. The pape
 
 
 [Controlling Steel Pipe Thickness.pdf](https://github.com/user-attachments/files/17278943/Controlling.Steel.Pipe.Thickness.pdf)
+
