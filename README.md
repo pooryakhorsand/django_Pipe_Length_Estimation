@@ -32,7 +32,10 @@ Here are demonstration videos of the Helmet Detection Application.
 
 https://github.com/user-attachments/assets/f14603d3-c476-4689-99b2-396e1b83d16b
 
+### Original Image
 ![2002](https://github.com/user-attachments/assets/9f21dd4d-b37e-4231-b29b-1fbf4dc720c4)
+
+### Segmented Image
 ![segmented_image](https://github.com/user-attachments/assets/511267b5-2f9a-477a-b1b0-f7f4a8de0740)
 
 
