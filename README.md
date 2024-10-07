@@ -9,7 +9,7 @@ This project is a Django web application developed for the **Iran National Steel
 - [Features](#features)
 - [How It Works](#how-it-works)
 - [Videos](#Videos)
-- [Research Paper](#Research-Paper)
+- [Research Paper](#research-paper)
 Research Paper
 ## Features
 
