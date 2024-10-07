@@ -10,7 +10,6 @@ This project is a Django web application developed for the **Iran National Steel
 - [How It Works](#how-it-works)
 - [Videos](#Videos)
 - [Research Paper](#research-paper)
-Research Paper
 ## Features
 
 - **Automated Image Capture**: Captures screenshots of pipes at the production line.
