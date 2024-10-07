@@ -1,0 +1,16 @@
+{% extends 'accounts/base.html' %}
+
+{% block content %}
+    <div class="login-panel">
+        <h2 class="text-center">Login User</h2>
+        <form action="" method="post" novalidate>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+        <div class="panel-links">
+            <a href="{% url 'accounts:password_reset' %}" class="link forgot-password">Forgot your password?</a>
+            <a href="{% url 'accounts:user_register' %}" class="link register">Don't have an account? Register</a>
+        </div>
+    </div>
+{% endblock %}

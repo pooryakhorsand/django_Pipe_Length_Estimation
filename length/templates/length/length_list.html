@@ -1,0 +1,43 @@
+{% extends 'length/base.html' %}
+
+{% block title %}Pipe Length List{% endblock %}
+
+{% block content %}
+<!-- Filter Form -->
+<form method="GET" action="{% url 'length:length_list' %}" class="filter-form">
+    <label for="filter">Filter by:</label>
+    <select name="filter" id="filter">
+        <option value="all" {% if filter == 'all' %}selected{% endif %}>All</option>
+        <option value="today" {% if filter == 'today' %}selected{% endif %}>Today</option>
+        <option value="yesterday" {% if filter == 'yesterday' %}selected{% endif %}>Yesterday</option>
+        <option value="this_week" {% if filter == 'this_week' %}selected{% endif %}>This Week</option>
+    </select>
+    <button type="submit" class="filter-btn">Apply</button>
+</form>
+
+<!-- Display Table of Results -->
+<div class="table-container">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Image Name</th>
+                <th>Length Result</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for image in images %}
+                <tr>
+                    <td>{{ image.image_name }}</td>
+                    <td>{{ image.length_result }} cm</td>
+                    <td>{{ image.created_at|date:"Y-m-d H:i" }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="3">No records found.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

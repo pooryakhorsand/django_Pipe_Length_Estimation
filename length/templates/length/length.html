@@ -1,0 +1,58 @@
+{% extends 'length/base.html' %}
+
+{% block title %}Pipe Length Estimation{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Pipe Length Estimation</h1>
+</header>
+
+<!-- Main Section with Two Panels -->
+<div class="main-section">
+    <!-- Left Panel for Uploading an Image -->
+    <div class="left-panel">
+        <h2>Upload an Image to Estimate the Pipe Length</h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Upload and Estimate</button>
+        </form>
+    </div>
+
+    <!-- Right Panel for Results -->
+    <div class="right-panel">
+        {% if total_length %}
+        <section class="result-section">
+            <h2>Estimated Length</h2>
+            <p>The estimated length is: <strong>{{ total_length }} meters</strong></p>
+        </section>
+        {% endif %}
+
+        {% if result_image_path %}
+        <section class="result-image-section">
+            <h2>Segmented Image</h2>
+            <div class="image-container">
+                <img src="{{ result_image_path }}" alt="Segmented Image" class="segmented-image">
+            </div>
+        </section>
+        {% endif %}
+
+        <!-- Display any form errors -->
+        {% if form.errors %}
+        <section class="error-section">
+            <h2>Errors</h2>
+            <ul class="error-list">
+                {% for error in form.non_field_errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <li>{{ field.label }}: {{ error }}</li>
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
